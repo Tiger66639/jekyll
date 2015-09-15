@@ -1,244 +1,107 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <title>Jekyll &bull; Simple, blog-aware, static sites</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="generator" content="Jekyll v3.0.0.pre.beta8">
-  <link type="application/atom+xml" rel="alternate" href="http://jekyllrb.com/feed.xml" title="Jekyll • Simple, blog-aware, static sites" />
-  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/jekyll/jekyll/commits/master.atom">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
-  <link rel="stylesheet" href="/css/screen.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <!--[if lt IE 9]>
-  <script src="/js/html5shiv.min.js"></script>
-  <script src="/js/respond.min.js"></script>
-  <![endif]-->
-</head>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jekyll by Tiger66639</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Tiger66639/jekyll">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/jekyll/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Tiger66639/jekyll/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-<body class="wrap">
-  <header role="banner">
-  <nav class="mobile-nav show-on-mobiles">
-    <ul>
-  <li class="current">
-    <a href="/">Home</a>
-  </li>
-  <li class="">
-    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
-  </li>
-  <li class="">
-    <a href="/news/">News</a>
-  </li>
-  <li>
-    <a href="/help/">Help</a>
-  </li>
-  <li>
-    <a href="https://github.com/jekyll/jekyll"><span class="hide-on-mobiles">View on </span>GitHub</a>
-  </li>
-</ul>
+    <div class="wrapper">
 
-  </nav>
-  <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="/">
-          <span class="sr-only">Jekyll</span>
-          <img src="/img/logo-2x.png" width="249" height="115" alt="Jekyll Logo">
-        </a>
-      </h1>
-    </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
-      <ul>
-  <li class="current">
-    <a href="/">Home</a>
-  </li>
-  <li class="">
-    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
-  </li>
-  <li class="">
-    <a href="/news/">News</a>
-  </li>
-  <li>
-    <a href="/help/">Help</a>
-  </li>
-  <li>
-    <a href="https://github.com/jekyll/jekyll"><span class="hide-on-mobiles">View on </span>GitHub</a>
-  </li>
-</ul>
-
-    </nav>
-  </div>
-</header>
-
-
-  <section class="intro">
-  <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <p class="first">Transform your plain text into static&nbsp;websites and&nbsp;blogs.</p>
-    </div>
-  </div>
-</section>
-<section class="features">
-  <div class="grid">
-    <div class="unit one-third">
-      <h2>Simple</h2>
-      <p>
-        No more databases, comment moderation, or pesky updates to install—just <em>your content</em>.
-      </p>
-      <a href="/docs/usage/">How Jekyll works &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Static</h2>
-      <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> (or <a href="http://redcloth.org/textile">Textile</a>), <a href="https://github.com/Shopify/liquid/wiki">Liquid</a>, HTML <span class="amp">&amp;</span> CSS go in. Static sites come out ready for deployment.</p>
-      <a href="/docs/templates/">Jekyll template guide &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Blog-aware</h2>
-      <p>
-        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
-      </p>
-      <a href="/docs/migrations/">Migrate your blog &rarr;</a>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section>
-<section class="quickstart">
-  <div class="grid">
-    <div class="unit golden-small center-on-mobiles">
-      <h3>Get up and running <em>in&nbsp;seconds</em>.</h3>
-    </div>
-    <div class="unit golden-large code">
-      <p class="title">Quick-start Instructions</p>
-      <div class="shell">
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">gem install jekyll</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll new my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">cd my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~/my-awesome-site</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll serve</span>
-        </p>
-        <p class="line">
-          <span class="output"># => Now browse to http://localhost:4000</span>
-        </p>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section>
-<section class="free-hosting">
-  <div class="grid">
-    <div class="unit whole">
-      <div class="grid pane">
-        <div class="unit whole center-on-mobiles">
-          <img src="img/octojekyll.png" width="300" height="251" alt="Free Jekyll hosting on GitHub Pages">
-          <div class="pane-content">
-            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
-            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
-            <a href="http://pages.github.com/">Learn more about GitHub Pages &rarr;</a>
-          </div>
+      <section>
+        <div id="title">
+          <h1>Jekyll</h1>
+          <p>Jekyll is a blog-aware, static site generator in Ruby</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Tiger66639">Tiger66639</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-        <div class="clear"></div>
-      </div>
+
+        <h1>
+<a id="jekyll" class="anchor" href="#jekyll" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://jekyllrb.com/">Jekyll</a>
+</h1>
+
+<p><a href="https://travis-ci.org/Tiger66639/jekyll"><img src="https://travis-ci.org/Tiger66639/jekyll.svg" alt="Build Status"></a>
+By Tom Preston-Werner, Nick Quaranto, Parker Moore, and many <a href="https://github.com/jekyll/jekyll/graphs/contributors">awesome contributors</a>!</p>
+
+<p>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind <a href="http://pages.github.com">GitHub Pages</a>, which you can use to host sites right from your GitHub repositories.</p>
+
+<h2>
+<a id="philosophy" class="anchor" href="#philosophy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Philosophy</h2>
+
+<p>Jekyll does what you tell it to do — no more, no less. It doesn't try to outsmart users by making bold assumptions, nor does it burden them with needless complexity and configuration. Put simply, Jekyll gets out of your way and allows you to concentrate on what truly matters: your content.</p>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<ul>
+<li>
+<a href="http://jekyllrb.com/docs/installation/">Install</a> the gem</li>
+<li>Read up about its <a href="http://jekyllrb.com/docs/usage/">Usage</a> and <a href="http://jekyllrb.com/docs/configuration/">Configuration</a>
+</li>
+<li>Take a gander at some existing <a href="https://wiki.github.com/jekyll/jekyll/sites">Sites</a>
+</li>
+<li>Fork and <a href="http://jekyllrb.com/docs/contributing/">Contribute</a> your own modifications</li>
+<li>Have questions? Check out our official forum community <a href="https://talk.jekyllrb.com/">Jekyll Talk</a> or <a href="https://botbot.me/freenode/jekyll/"><code>#jekyll</code> on irc.freenode.net</a>
+</li>
+</ul>
+
+<h2>
+<a id="code-of-conduct" class="anchor" href="#code-of-conduct" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code of Conduct</h2>
+
+<p>In order to have a more open and welcoming community, Jekyll adheres to a
+<a href="CONDUCT.md">code of conduct</a> adapted from the Ruby on Rails code of
+conduct.</p>
+
+<p>Please adhere to this code of conduct in any interactions you have in the
+Jekyll community. It is strictly enforced on all official Jekyll
+repositories, websites, and resources. If you encounter someone violating
+these terms, please let a maintainer (<a href="https://github.com/parkr" class="user-mention">@parkr</a>, <a href="https://github.com/envygeeks" class="user-mention">@envygeeks</a>, or <a href="https://github.com/mattr-" class="user-mention">@mattr-</a>) know
+and we will address it as soon as possible.</p>
+
+<h2>
+<a id="diving-in" class="anchor" href="#diving-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diving In</h2>
+
+<ul>
+<li>
+<a href="http://import.jekyllrb.com/docs/home/">Migrate</a> from your previous system</li>
+<li>Learn how the <a href="http://jekyllrb.com/docs/frontmatter/">YAML Front Matter</a> works</li>
+<li>Put information on your site with <a href="http://jekyllrb.com/docs/variables/">Variables</a>
+</li>
+<li>Customize the <a href="http://jekyllrb.com/docs/permalinks/">Permalinks</a> your posts are generated with</li>
+<li>Use the built-in <a href="http://jekyllrb.com/docs/templates/">Liquid Extensions</a> to make your life easier</li>
+<li>Use custom <a href="http://jekyllrb.com/docs/plugins/">Plugins</a> to generate content specific to your site</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>See <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">LICENSE</a>.</p>
+      </section>
+
     </div>
-  </div>
-</section>
-
-
-  <footer role="contentinfo">
-  <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <p>The contents of this website are &copy;&nbsp;2015 <a href="http://tom.preston-werner.com/">Tom Preston-Werner</a> under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
-    </div>
-    <div class="unit two-thirds align-right center-on-mobiles">
-      <p>
-        Proudly hosted by
-        <a href="https://github.com">
-          <img src="/img/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-  <script>
-  var anchorForId = function (id) {
-    var anchor = document.createElement("a");
-    anchor.className = "header-link";
-    anchor.href      = "#" + id;
-    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
-    anchor.title = "Permalink";
-    return anchor;
-  };
-
-  var linkifyAnchors = function (level, containingElement) {
-    var headers = containingElement.getElementsByTagName("h" + level);
-    for (var h = 0; h < headers.length; h++) {
-      var header = headers[h];
-
-      if (typeof header.id !== "undefined" && header.id !== "") {
-        header.appendChild(anchorForId(header.id));
-      }
-    }
-  };
-
-  document.onreadystatechange = function () {
-    if (this.readyState === "complete") {
-      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
-      if (!contentBlock) {
-        return;
-      }
-      for (var level = 1; level <= 6; level++) {
-        linkifyAnchors(level, contentBlock);
-      }
-    }
-  };
-</script>
-
-  
-  <!-- Gauges (http://gaug.es/) -->
-  <script>
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '503c5af6613f5d0f19000027');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
-
-
-
-  <!-- Google Analytics (http://google.com/analytics) -->
-  <script>
-    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
-    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
-    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
-    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
-
-    ga('create', 'UA-50755011-1', 'jekyllrb.com');
-    ga('send', 'pageview');
-
-  </script>
-
-
-
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
 </html>
